@@ -1,0 +1,74 @@
+@import '../../assets/fonts.scss';
+
+.auth-page {
+    height           : 100%;
+    min-height       : 100vh;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : space-between;
+    grid-column-start: 5;
+    grid-column-end  : 9;
+
+    &__header {
+        margin        : 50px auto 106px;
+        display       : flex;
+        flex-direction: row;
+
+        &-img {
+            width : 48px;
+            height: 48px;
+        }
+
+        &-text {
+            margin     : auto 24px;
+            font-size  : 24px;
+            font-family: 'Vampiro One';
+        }
+    }
+
+    &__main {
+        display       : flex;
+        flex-direction: column;
+        flex          : 1;
+        height        : fit-content;
+
+        &-input {
+            margin-top: 44px;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    &__btn-block {
+        display       : flex;
+        flex-direction: column;
+        flex          : 1;
+    }
+
+    &__bottom-btn {
+        margin: 0 auto;
+        width : 100%;
+        height: fit-content;
+    }
+
+    &__bottom-text {
+        width         : fit-content;
+        margin        : 40px auto 0;
+        color         : #333333;
+        font-family   : 'SF UI Display';
+        display       : flex;
+        flex-direction: row;
+
+        a {
+            color: #333333;
+            margin-left: 5px;
+            
+            &:hover {
+                color           : #cccccc;
+                transition-delay: 0.01s;    
+            }
+        }
+    }
+}

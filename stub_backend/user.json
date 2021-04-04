@@ -1,0 +1,11 @@
+{
+    "dayHours": 4,
+    "email": "userEmail",
+    "id": 0,
+    "name": "Ivan Ivanov",
+    "timer": {
+        "started": true,
+        "time_left": 5400
+    },
+    "weekDays": 7
+}

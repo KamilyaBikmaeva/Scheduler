@@ -1,0 +1,127 @@
+@import "../../assets/fonts.scss";
+
+.userPage {
+    &__logo {
+        &-block {
+            margin-top       : 46px;
+            margin-right     : auto;
+            margin-left      : auto;
+            grid-column-start: 1;
+            grid-column-end  : 4;
+            display          : flex;
+        }
+
+        &-circle {
+            margin-left     : auto;
+            height          : 150px;
+            width           : 150px;
+            background-color: #EEEEEE;
+            border-radius   : 50%;
+            display         : block;
+            position        : relative;
+            border          : 1px dashed #8A8A8A;
+            box-sizing      : border-box;
+            cursor          : pointer;
+            align-items     : center;
+            justify-items   : center;
+
+            &::after {
+                position  : absolute;
+                bottom    : 0;
+                right     : 0;
+                z-index   : 1;
+                content   : "";
+                width     : 32px;
+                height    : 32px;
+                background: no-repeat white url('../../assets/pics/componentPics/camera.svg');
+            }
+        }
+
+        &-user {
+            display      : flex;
+            width        : 100%;
+            height       : 100%;
+            border-radius: 50%;
+            overflow     : hidden;
+            margin       : auto auto;
+
+            &-default {
+                margin: auto auto;
+                width : 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    &__body {
+        &-block {
+            margin-top       : 46px;
+            grid-column-start: 4;
+            grid-column-end  : 10;
+        }
+
+        &-username {
+            font-family  : 'Vampiro One';
+            font-size    : 24px;
+            margin-bottom: 12px;
+        }
+
+        &-row {
+            display       : flex;
+            flex-direction: row;
+            flex-wrap     : nowrap;
+            margin-top    : 24px;
+            align-content : space-between;
+            width         : calc(100% - 24px);
+
+            &-item {
+                width: calc(50% - 36px);
+
+                &:first-child {
+                    margin-right: 24px;
+                }
+
+                &:last-child {
+                    margin-left: 24px;
+                }
+            }
+        }
+
+        &-saveBtn {
+            margin: 0 auto;
+        }
+    }
+
+    &__logout {
+        &-block {
+            margin-top       : 46px;
+            margin-left      : auto;
+            margin-right     : auto;
+            grid-column-start: 10;
+            grid-column-end  : 13;
+
+            display         : flex;
+            flex-direction  : row;
+            flex-wrap       : nowrap;
+            height          : fit-content;
+            cursor          : pointer;
+            border          : none;
+            background-color: white;
+        }
+
+        &-pic {
+            width : 18px;
+            height: 18px;
+        }
+
+        &-text {
+            font-size  : 16px;
+            font-family: 'SF UI Display';
+            margin-left: 6px;
+            color      : #333333;
+            height     : fit-content;
+        }
+    }
+
+
+}

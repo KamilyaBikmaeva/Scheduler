@@ -1,0 +1,41 @@
+.button {
+    &-ellipse {
+        display: flex;
+        cursor: pointer;
+        border: 1px solid #333333;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: auto;
+        button {
+            border: unset;
+            background-color: unset;
+            color: #333333;
+            font-size: 16px;
+        }
+        &:hover {
+            transition-delay: 0.01s;
+            button {
+                color: #cccccc;
+                border: unset;
+                background-color: unset;
+                transition-delay: 0.01s;
+            }
+            border: 1px solid #cccccc;
+        }
+    }
+    &-rectangle {
+        font-size: 16px;
+        font-family: 'SF UI Display';
+        button {
+            padding: 6px 20px;
+            background: #FFFFFF;
+            border: 1px solid #333333;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+    &-circle {}
+}

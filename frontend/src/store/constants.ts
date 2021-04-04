@@ -1,0 +1,5 @@
+export const SET_USER_DATA = 'SET_USER_DATA';
+
+export const SET_CARD_DATA = 'SET_CARD_DATA';
+
+export const SET_CARDS_LIST_DATA = 'SET_CARDS_LIST_DATA';

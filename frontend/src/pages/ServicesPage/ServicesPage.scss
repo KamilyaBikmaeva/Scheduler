@@ -1,0 +1,39 @@
+@import '../../assets/fonts.scss';
+
+.servicesPage {
+    grid-column-start   : 3;
+    grid-column-end     : 11;
+    margin-top          : 46px;
+    display             : flex;
+    flex-direction      : row;
+    align-content       : space-between;
+
+    &__column {
+        display         : flex;
+        flex-direction  : column;
+        margin          : 0 auto;
+        background-color: white;
+
+        &Title {
+            font-family   : 'SF UI Display';
+            font-style    : normal;
+            font-weight   : 600;
+            font-size     : 18px;
+            line-height   : 21px;
+            text-align    : center;
+            text-transform: uppercase;
+        }
+
+        &Item {
+            display: flex;
+            width  : 100px;
+            height : 100px;
+            margin : 24px auto 0;
+
+            &-pic {
+                margin: auto auto;
+                cursor: pointer;
+            }
+        }
+    }
+}

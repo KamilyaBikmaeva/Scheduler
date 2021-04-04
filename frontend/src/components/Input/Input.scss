@@ -1,0 +1,58 @@
+@import '../../assets/fonts.scss';
+
+.input {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+
+    &__label {
+        display       : flex;
+        flex-direction: row;
+        font-family   : 'SF UI Display';
+        margin-bottom : 18px;
+        margin-left   : 4px;
+
+        &-pic {
+            width       : 20px;
+            height      : 20px;
+            margin-right: 10px;
+        }
+    }
+
+    &-limpid {
+        display       : flex;
+        flex-direction: row;
+        padding       : 8px 2px;
+        width         : 100%;
+        border-bottom : 1px solid black;
+
+        .input__field {
+            margin : auto 18px;
+            width  : 100%;
+            border : 0px transparent;
+            outline: none;
+        }
+    }
+
+    &-grey {
+        .input__field {
+            background   : #EEEEEE;
+            border-radius: 8px;
+            border       : 0px transparent;
+            width        : calc(100% - 8px);
+            font-size    : 16px;
+            font-family  : 'SF UI Display';
+            padding      : 14px 16px;
+        }
+    }
+
+    &__pic {
+        display: flex;
+        margin : auto 0;
+        width  : 24px 24px;
+    }
+
+    &__field {
+        resize: vertical;
+    }
+}

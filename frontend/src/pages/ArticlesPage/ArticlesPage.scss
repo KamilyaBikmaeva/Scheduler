@@ -1,0 +1,62 @@
+@import '../../assets/fonts.scss';
+
+.articlesPage {
+    margin-top       : 22px;
+    grid-column-start: 3;
+    grid-column-end  : 11;
+
+    &__item {
+        display       : flex;
+        flex-direction: row;
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom : 1px dashed #BBBBBB;
+
+        &Pic {
+            margin-right    : 24px;
+            display         : flex;
+            width           : 150px;
+            height          : 150px;
+            background-color: #EEEEEE;
+            border-radius   : 10px;
+
+            &-default {
+                width : 76px;
+                height: 66px;
+                margin: auto auto;
+            }
+        }
+
+        &Body {
+            display       : flex;
+            flex-direction: row;
+            width         : calc(100% - 150px - 120px);
+        }
+
+        &TextBlock {
+            display       : flex;
+            flex-direction: column;
+        }
+
+        &Title {
+            font-family  : 'SF UI Display';
+            font-size    : 18px;
+            color        : #333333;
+            margin-bottom: 16px;
+        }
+
+        &Payload {
+            font-family: 'SF UI Display';
+            font-size  : 16px;
+            color      : #999999;
+        }
+
+        &Button {
+            margin-top: auto;
+
+            button {
+                padding: 6px 34px;
+            }
+        }
+    }
+}
